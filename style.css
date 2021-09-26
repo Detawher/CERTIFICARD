@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap");
 
 body {
+  position: relative;
   background-color: #263969;
   background-size: 100%;
   background-position: center;
@@ -16,12 +17,14 @@ body {
 }
 
 .container {
+  display: flex;
+  width: 1116px;
+  height: 926px;
   background-color: #1a1c1c;
   color: #6ce9f0;
-  margin: 64px;
   border-radius: 20px;
-  box-shadow: 6px 6px 6px #0e1d2f;
   padding: 64px;
+  position: absolute;
 }
 
 .cabecalho {
@@ -54,6 +57,11 @@ body {
 }
 
 .tema button {
+  position: absolute;
+  width: 179px;
+  height: 62px;
+  left: 1003px;
+  top: 40px;
   align-self: flex-end;
   font-size: 24px;
   font-weight: 400;
@@ -64,7 +72,15 @@ body {
 }
 
 .projetos {
+  position: absolute;
+  width: 800px;
+  height: 628px;
+  left: 30px;
+  top: 303px;
   color: #6ce9f0;
+  display: flex;
+  overflow-y: scroll;
+  scrollbar-width: thin;
   display: flex;
   flex-direction: column;
   background: #101010;
@@ -81,6 +97,9 @@ body {
 }
 
 .projetos-item {
+  width: 750px;
+  left: 153px;
+  top: 303px;
   list-style-type: none;
   font-size: 24px;
   font-weight: 400px;
@@ -88,6 +107,11 @@ body {
 }
 
 .projetos-item a {
+  position: absolute;
+  width: 713px;
+  height: 237px;
+  left: 207px;
+  top: 442px;
   color: #6ce9f0;
   text-decoration: none;
 }
@@ -108,7 +132,7 @@ body {
 }
 
 .white {
-  background: #3468a7;
+  background: #e0e0e0;
 }
 
 .white .container {
@@ -117,10 +141,67 @@ body {
 }
 
 .white .projetos {
-  background: #292828;
+  background: #c9c8c7;
+  color: #000000;
+}
+
+.white .conquista {
+  background: #c9c8c7;
+  color: #000000;
 }
 
 .white .tema button {
-  background: #787878;
-  color: #ecf4ff;
+  background: #c9c8c7;
+  color: #000000;
+}
+
+.white ::-webkit-scrollbar {
+  background-color: #e9e8e7;
+}
+
+.conquista {
+  position: absolute;
+  width: 260px;
+  height: 628px;
+  left: 920px;
+  top: 330px;
+  color: #6ce9f0;
+  background: #101010;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.img_1 {
+  position: absolute;
+  width: 109px;
+  height: 109px;
+  left: 93px;
+}
+
+.img_2 {
+  position: absolute;
+  width: 109px;
+  height: 109px;
+  left: 93px;
+  top: 248px;
+}
+
+.img_3 {
+  position: absolute;
+  width: 109px;
+  height: 109px;
+  left: 93px;
+  top: 387px;
+}
+
+.img_4 {
+  position: absolute;
+  width: 109px;
+  height: 109px;
+  left: 93px;
+  top: 526px;
+}
+
+.OsProjetos {
+  border-radius: 20px;
 }
